@@ -1,17 +1,23 @@
 #include <stdio.h>
-#include <unistd.h>
+
 /**
  * main - Entry point
- * Description: prints char below 10
+ *
+ * Description: prints 0-9 using putchar
+ *              while using int variable
+ *
  * Return: Always 0 (success)
  */
 int main(void)
 {
-	int a;
+	int digit = 0;
 
-	for (a = 0; a < 10; a++)
+	while (digit <= 9)
 	{
-		putchar(a + '0');
-	}
+		/*covert digit to ASCII representation*/
+	        putchar(digit + '0');
+	        digit++;
+	}	
 	putchar('\n');
+
 	return (0);
